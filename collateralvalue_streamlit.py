@@ -17,6 +17,7 @@ MetaStreet seeks to utilize financial constructs to scale the GDP of the Metaver
 image = Image.open('CV_Formula.png')
 
 st.image(image, caption='Collateral Value Formula')
+
 Checkout [Metastreet](https://metastreet.notion.site/Senior-Data-Scientist-Engineer-bad2e7e9a8e340d3a23ff77faa56548d) and [Data Career Jumpstart](https://www.datacareerjumpstart.com/).
 """
 
