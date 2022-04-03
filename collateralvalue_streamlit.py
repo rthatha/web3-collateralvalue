@@ -5,13 +5,18 @@ import pandas as pd
 import streamlit as st
 
 """
-# Welcome to Streamlit!
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-In the meantime, below is an example of what you can do with just a few lines of code:
+# Welcome to Collateral Value Calculator!
+
+
+Checkout [Metastreet](https://metastreet.notion.site/Senior-Data-Scientist-Engineer-bad2e7e9a8e340d3a23ff77faa56548d) and [Data Career Jumpstart](https://www.datacareerjumpstart.com/).
 """
 
+
+df = pd.DataFrame(
+    np.random.randn(50, 20),
+    columns=('col %d' % i for i in range(20)))
+
+st.dataframe(df)  # Same as st.write(df)
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
