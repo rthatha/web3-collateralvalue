@@ -28,6 +28,14 @@ df = pd.DataFrame(
 
 st.dataframe(df)  # Same as st.write(df)
 
+
+@st.cache(persist=True)
+ def fetch_and_clean_data(url):
+     # Fetch data from URL here, and then clean it up.
+     return data
+
+#d1 = fetch_and_clean_data(DATA_URL_1)
+
 d = st.date_input(
      "When's your birthday",
      datetime.date(2019, 7, 6))
