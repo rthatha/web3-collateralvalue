@@ -14,7 +14,7 @@ from PIL import Image
 MetaStreet is a DeFi (Decentralized Finance) interest rate protocol that provides liquidity to NFT (non-fungible token) collateral via tranched capital pools, abstracting risk and yield away from individual NFTs. 
 MetaStreet seeks to utilize financial constructs to scale the GDP of the Metaverse and emerging NFT economies.
 
-image = Image.open('CV_formula.png')
+image = Image.open('CV_Formula.png')
 
 st.image(image, caption='Collateral Value Formula')
 Checkout [Metastreet](https://metastreet.notion.site/Senior-Data-Scientist-Engineer-bad2e7e9a8e340d3a23ff77faa56548d) and [Data Career Jumpstart](https://www.datacareerjumpstart.com/).
