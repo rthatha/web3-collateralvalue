@@ -4,6 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as np
+import datetime
 
 from PIL import Image
 
@@ -30,9 +31,10 @@ st.dataframe(df)  # Same as st.write(df)
 
 
 @st.cache(persist=True)
- def fetch_and_clean_data(url):
-     # Fetch data from URL here, and then clean it up.
-     return data
+def fetch_and_clean_data(url):
+     # Fetch data from URL here, and then clean it up.    
+    return data
+
 
 #d1 = fetch_and_clean_data(DATA_URL_1)
 
