@@ -42,28 +42,16 @@ def fetch_and_clean_data(url):
 
 #d1 = fetch_and_clean_data(DATA_URL_1)
 
+"""
+We can see that we have all the data we need to build our calculator. 
+The transaction date and the value in ETH / USD is all we need.
+
+Choose a date below and the CV value will be calculated and displayed in both ETH and USD
+
+"""
+
 d = st.date_input(
-     "When's your birthday",
+     "Collateral Value on",
      datetime.date(2019, 7, 6))
-st.write('Your birthday is:', d)
+st.write('is:', d)
 
-with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
-
-    Point = namedtuple('Point', 'x y')
-    data = []
-
-    points_per_turn = total_points / num_turns
-
-    for curr_point_num in range(total_points):
-        curr_turn, i = divmod(curr_point_num, points_per_turn)
-        angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
-        radius = curr_point_num / total_points
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
-        data.append(Point(x, y))
-
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
-        .encode(x='x:Q', y='y:Q'))
