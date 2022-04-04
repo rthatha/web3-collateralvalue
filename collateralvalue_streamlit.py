@@ -20,11 +20,14 @@ In this project, an automatic “collateral value” calculator is built, using 
 """
 image = Image.open('CV_Formula.png')
 
-st.image(image, caption='Collateral Value Formula')
+st.image(image, caption='')
 """
-### For more details, checkout [Metastreet](https://metastreet.notion.site/Senior-Data-Scientist-Engineer-bad2e7e9a8e340d3a23ff77faa56548d) and [Data Career Jumpstart](https://www.datacareerjumpstart.com/).
-"""
+For more details, checkout [Metastreet](https://metastreet.notion.site/Senior-Data-Scientist-Engineer-bad2e7e9a8e340d3a23ff77faa56548d) and [Data Career Jumpstart](https://www.datacareerjumpstart.com/).
 
+### Exploratory Data Analysis:
+
+The raw data provided is shown below in a table
+"""
 
 df = pd.read_csv('cryptopunks_01-14-2022_13-55-22_downloaded.csv')
 
